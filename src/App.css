@@ -1,42 +1,168 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  background-color: #008CBA;
+  /* text-align: center; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-right: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.listContent ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; 
+  font-weight: 550;
 }
 
-.card {
-  padding: 2em;
+.listContent li {
+  margin-right: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.listContent a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.listContent a:hover {
+  color: #555;
+}
+h1 {
+  width: 50%;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 300px;
+}
+.btnSign, .btnLogin {
+  margin-right: 20px;
+  width: 15%;
+  height: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnSign {
+  background-color: #a9a9a9; 
+  color: white; 
+}
+
+.btnSign:hover {
+  background-color: #808080; 
+}
+
+.btnLogin {
+  background-color: #008CBA;
+  color: white;
+}
+
+.btnLogin:hover {
+  background-color: #007bb5;
+}
+
+/* main content */
+.mainContent {
+  width: 450px;
+  margin-top: 130px;
+  margin-left: 100px;
+
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 550;
+}
+
+.content {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.btnStart {
+  margin-top: 50px;
+  height: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #008CBA;
+  color: white;
+}
+
+/*Search bar */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  margin-right: 200px; 
+}
+
+.searchInput {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: #d3d3d3; /* Màu nền xám cho thanh tìm kiếm */
+  color: #333;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-left: none; 
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white; 
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #007bb5; 
+}
+
+.containerHome{
+  display: flex;
+  justify-content: space-between;
+}
+/* .fpts-header {
+  background-color: #007bb5;
+} */
+
+.fpts-main-header .carousel-inner > .item > a > img,
+.fpts-main-header .carousel-inner > .item > img,
+.fpts-main-header .img-responsive,
+.fpts-main-header .thumbnail a > img,
+.fpts-main-header .thumbnail > img {
+  height: auto;
+}
+.fpts-contactfpts_ {
+  padding-bottom: 26px;
 }
